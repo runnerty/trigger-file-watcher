@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "@runnerty-trigger-file-watcher",
+  "definitions": {
+    "config": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "file_name": {
+          "type": "string"
+        },
+        "condition": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "pattern": "@runnerty-trigger-file-watcher"
+        }
+      }
+    },
+    "params": {
+      "type": "object",
+      "required": [
+        "id",
+        "file_name",
+        "condition"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "file_name": {
+          "type": "string"
+        },
+        "condition": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

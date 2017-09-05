@@ -1,0 +1,24 @@
+{
+  "name": "@runnerty/trigger-file-watcher",
+  "version": "0.0.1",
+  "description": "Runnerty module: Trigger File Watcher",
+  "author": "Coderty",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runnerty/trigger-file-watcher.git"
+  },
+  "keywords": [
+    "runnerty",
+    "trigger",
+    "filewatcher"
+  ],
+  "bugs": {
+    "url": "https://github.com/runnerty/trigger-file-watcher/issues"
+  },
+  "homepage": "https://github.com/runnerty/trigger-file-watcher#readme",
+  "dependencies": {
+    "chokidar": "^1.7.0"
+  }
+}
