@@ -1,6 +1,6 @@
 {
   "name": "@runnerty/trigger-file-watcher",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Runnerty module: Trigger File Watcher",
   "author": "Coderty",
   "license": "MIT",
@@ -20,5 +20,11 @@
   "homepage": "https://github.com/runnerty/trigger-file-watcher#readme",
   "dependencies": {
     "chokidar": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
   }
 }
