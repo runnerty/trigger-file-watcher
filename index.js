@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const chokidar = require("chokidar");
+const chokidar = require('chokidar');
 var Trigger = global.TriggerClass;
 
 class triggerFileWatcher extends Trigger {
@@ -24,17 +24,18 @@ class triggerFileWatcher extends Trigger {
     });
 
     //Create watch condition:
-    _this.fileWatcher.on(_this.params.condition, (pathfile) => {
+    _this.fileWatcher.on(_this.params.condition, pathfile => {
       const checkCalendar = true;
-      const inputValues = {"file_name": pathfile};
-      const customValues = {};
+      const inputValues = [];
+      const customValues = { file_name: pathfile };
 
       //Start Chain: Send file_name into inputValues.
-      _this.startChain(checkCalendar, inputValues, customValues)
-      .then(() => {})
-      .catch(err => {
-        _this.logger.error("startChain error (triggerFileWatcher):", err);
-      });
+      _this
+        .startChain(checkCalendar, inputValues, customValues)
+        .then(() => {})
+        .catch(err => {
+          _this.logger.error('startChain error (triggerFileWatcher):', err);
+        });
     });
   }
 }

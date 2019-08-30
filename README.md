@@ -25,7 +25,7 @@ It is possible to set up file system path trigger in Runnerty with the help of a
 ```
 
 ### Chain input
-This trigger sends to the input of the chain the name of the file watched (file_name).
+This trigger sends to the custom_values of the chain the name of the file watched (file_name).
 
 
 [Runnerty]: http://www.runnerty.io
