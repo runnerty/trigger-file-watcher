@@ -23,8 +23,12 @@ It is possible to set up file system path trigger in Runnerty with the help of a
 Add in [config.json]:
 ```json
 {
-  "id": "filewatcher_default",
-  "type": "@runnerty-trigger-file-watcher"
+  "triggers": [
+    {
+      "id": "filewatcher_default",
+      "type": "@runnerty-trigger-file-watcher"
+    }
+  ]
 }
 ```
 
@@ -32,16 +36,24 @@ Add in [config.json]:
 Add in [plan.json]:
 ```json
 {
-  "id": "filewatcher_default",
-  "file_name": "/path/myfile.txt",
-  "condition": "change"
+  "triggers": [
+    {
+      "id": "filewatcher_default",
+      "file_name": "/path/myfile.txt",
+      "condition": "change"
+    }
+  ]
 }
 ```
 ```json
 {
-  "id": "filewatcher_default",
-  "file_name": "/path/*.jpg",
-  "condition": "add"
+  "triggers": [
+    {
+      "id": "filewatcher_default",
+      "file_name": "/path/*.jpg",
+      "condition": "add"
+    }
+  ]
 }
 ```
 

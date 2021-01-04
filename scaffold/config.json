@@ -1,0 +1,8 @@
+{
+  "triggers": [
+    {
+      "id": "filewatcher_default",
+      "type": "@runnerty-trigger-file-watcher"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 'use strict';
 
 const chokidar = require('chokidar');
-const Trigger = global.TriggerClass;
+const Trigger = require('@runnerty/module-core').Trigger;
 
 class triggerFileWatcher extends Trigger {
   constructor(chain, params) {
