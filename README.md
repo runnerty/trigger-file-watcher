@@ -19,12 +19,37 @@ It is possible to set up file system path trigger in Runnerty with the help of a
 - *unlink*: when a file is deleted.
 - *error*: when there is an error in the file treatment.
 
+### Installation:
+Through NPM
+
+```bash
+npm i @runnerty/trigger-file-watcher
+```
+
+You can also add modules to your project with [runnerty-cli]
+
+```bash
+npx runnerty-cli add @runnerty/trigger-file-watcher
+```
+
+This command installs the module in your project, adds example configuration in your `config.json`.
+
+If you have installed [runnerty-cli] globally you can include the module with this command:
+
+```bash
+rty add @runnerty/trigger-file-watcher
+```
+
 ### Configuration sample:
 Add in [config.json]:
 ```json
 {
-  "id": "filewatcher_default",
-  "type": "@runnerty-trigger-file-watcher"
+  "triggers": [
+    {
+      "id": "filewatcher_default",
+      "type": "@runnerty-trigger-file-watcher"
+    }
+  ]
 }
 ```
 
@@ -32,16 +57,24 @@ Add in [config.json]:
 Add in [plan.json]:
 ```json
 {
-  "id": "filewatcher_default",
-  "file_name": "/path/myfile.txt",
-  "condition": "change"
+  "triggers": [
+    {
+      "id": "filewatcher_default",
+      "file_name": "/path/myfile.txt",
+      "condition": "change"
+    }
+  ]
 }
 ```
 ```json
 {
-  "id": "filewatcher_default",
-  "file_name": "/path/*.jpg",
-  "condition": "add"
+  "triggers": [
+    {
+      "id": "filewatcher_default",
+      "file_name": "/path/*.jpg",
+      "condition": "add"
+    }
+  ]
 }
 ```
 
@@ -60,3 +93,4 @@ You can make use of this value through the "get values" function:
 [david-badge-url]: https://david-dm.org/runnerty/trigger-file-watcher
 [config.json]: http://docs.runnerty.io/config/
 [plan.json]: http://docs.runnerty.io/plan/
+[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
