@@ -7,6 +7,5 @@ LICENSE
 *.png
 *.txt
 TODO
-docs/functions.md
 *.md
 .DS_Store
