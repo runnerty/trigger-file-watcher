@@ -24,7 +24,7 @@
   "homepage": "https://github.com/runnerty/trigger-file-watcher#readme",
   "dependencies": {
     "@runnerty/module-core": "~3.0.5",
-    "chokidar": "~3.5.1"
+    "chokidar": "~4.0.0"
   },
   "devDependencies": {
     "eslint": "^7.20.0",
