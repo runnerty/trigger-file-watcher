@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/runnerty/trigger-file-watcher#readme",
   "dependencies": {
-    "@runnerty/module-core": "~3.0.5",
+    "@runnerty/module-core": "~3.1.2",
     "chokidar": "~3.5.1"
   },
   "devDependencies": {
